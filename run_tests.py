@@ -1,11 +1,13 @@
-import time, sys
+import sys
+import time
+import unittest
 
 sys.path.append('./interface')
 sys.path.append('./db_fixture')
 
-from .HTMLTestRunner import HTMLTestRunner
-import unittest
-from .db_fixture import test_data
+from pyrequest.HTMLTestRunner import HTMLTestRunner
+# from unittest import defaultTestLoader
+from pyrequest.db_fixture import test_data
 
 # 指定测试用例为当前文件夹下的 interface 目录
 test_dir = './interface'

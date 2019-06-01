@@ -1,8 +1,10 @@
 import os
 import sys
 import unittest
+
 import requests
 
+# parentdir = "C:\Python_project\pyrequest"
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, parentdir)
 from pyrequest.db_fixture import test_data
